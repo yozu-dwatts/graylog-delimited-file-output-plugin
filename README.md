@@ -1,3 +1,5 @@
+This branch allows the plugin to write to several independent files.
+
 Graylog Delimited File Output
 =============================
 
