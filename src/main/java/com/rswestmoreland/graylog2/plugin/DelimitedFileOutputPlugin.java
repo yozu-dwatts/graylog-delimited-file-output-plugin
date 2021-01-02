@@ -13,7 +13,7 @@ public class DelimitedFileOutputPlugin implements Plugin {
 	public PluginMetaData metadata() {
 		return new DelimitedFileOutputMetaData();
 	}
-	
+
 	@Override
 	public Collection<PluginModule> modules() {
 		return Arrays.<PluginModule>asList(new DelimitedFileOutputModule());

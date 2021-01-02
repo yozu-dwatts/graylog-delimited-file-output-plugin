@@ -45,6 +45,7 @@ public class DelimitedFileOutputMetaData implements PluginMetaData {
 		return DelimitedFileOutput.class.getName();
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public Version getVersion() {
 		return new Version(0, 1, 0);
