@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  options {
+    copyArtifactPermission('/Infrastructure/*');
+  }
+
   environment {
     branch          = "${env.BRANCH_NAME}"
   }
