@@ -2,7 +2,8 @@ pipeline {
   agent any
 
   options {
-    copyArtifactPermission('/Infrastructure/*');
+//    copyArtifactPermission('/Infrastructure/*');
+    copyArtifactPermission('/Infrastructure/Graylog/Docker%20Image/main');
   }
 
   environment {
