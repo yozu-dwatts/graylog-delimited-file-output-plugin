@@ -10,7 +10,7 @@ pipeline {
     stage("Build") {
       steps {
         script {      
-          
+          sh './gradlew build'
         }
       }
     } 
@@ -27,6 +27,7 @@ pipeline {
     }
 
     success {
+      archiveArtifacts artifacts: '**/build/libs/*.jar', fingerprint: true
       slackSend(
         color: "#00FF00",
         channel: "#devops",
