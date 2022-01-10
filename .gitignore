@@ -64,3 +64,4 @@ local.properties
 dependency-reduced-pom.xml
 vagrant/.vagrant
 /vagrant/graylog_latest.deb
+.gradle
