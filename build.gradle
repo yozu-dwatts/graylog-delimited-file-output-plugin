@@ -1,0 +1,31 @@
+plugins {
+	id 'java'
+}
+
+//graylog-delimited-file-output-plugin
+
+group = 'com.wizecore.graylog2'
+version = '0.1.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+compileJava {
+	sourceCompatibility = '1.8'
+	targetCompatibility = '1.8'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+  testImplementation 'junit:junit:4.12'
+  compileOnly 'org.graylog2:graylog2-server:4.2.5'
+  compileOnly 'org.graylog2:syslog4j:0.9.60'
+  compileOnly 'org.slf4j:slf4j-jdk14:1.7.21'
+}
+
+test {
+	useJUnitPlatform()
+}
